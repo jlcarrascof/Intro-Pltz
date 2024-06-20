@@ -8,7 +8,16 @@
             let player = 0;
             let computer = 2;
             player = prompt("Enter 1 for rock, 2 for paper, or 3 for scissors");
-            alert("You chose " + player);
+            // alert("You chose " + player);
+            if (player == 1) {
+                alert("You chose rock");
+            } else if (player == 2) {
+                alert("You chose paper");
+            } else if (player == 3) {
+                alert("You chose scissors");
+            } else {
+                alert("Invalid choice");
+            }
         </script>
     </head>
     <body>
