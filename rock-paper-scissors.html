@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
         <script>
+            function random(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
             // 1 = rock, 2 = paper, 3 = scissors
             let player = 0;
-            let min = 1;
-            let max = 3;
-            let computer = Math.floor(Math.random() * (max - min + 1) + min);
+            let computer = random(1, 3);
             player = prompt("Enter 1 for rock, 2 for paper, or 3 for scissors");
             if (player == 1) {
                 alert("You chose 🥌 ");
