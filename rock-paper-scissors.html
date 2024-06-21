@@ -8,13 +8,21 @@
             let player = 0;
             let computer = 2;
             player = prompt("Enter 1 for rock, 2 for paper, or 3 for scissors");
-            // alert("You chose " + player);
             if (player == 1) {
                 alert("You chose 🥌 ");
             } else if (player == 2) {
                 alert("You chose 🧻 ");
             } else if (player == 3) {
                 alert("You chose ✂️ ");
+            } else {
+                alert("Invalid choice");
+            }
+            if (computer == 1) {
+                alert("Computer chose 🥌 ");
+            } else if (computer == 2) {
+                alert("Computer chose 🧻 ");
+            } else if (computer == 3) {
+                alert("Computer chose ✂️ ");
             } else {
                 alert("Invalid choice");
             }
