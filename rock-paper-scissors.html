@@ -7,6 +7,18 @@
             function random(min, max) {
                 return Math.floor(Math.random() * (max - min + 1) + min);
             }
+
+            function choose(play) {
+                if (player == 1) {
+                    alert("You chose 🥌 ");
+                } else if (player == 2) {
+                    alert("You chose 🧻 ");
+                } else if (player == 3) {
+                    alert("You chose ✂️ ");
+                } else {
+                    alert("Invalid choice");
+             }
+            }
             // 1 = rock, 2 = paper, 3 = scissors
             let player = 0;
             let computer = random(1, 3);
