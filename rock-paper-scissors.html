@@ -9,14 +9,15 @@
             }
 
             function choose(play) {
-                if (player == 1) {
-                    alert("You chose 🥌 ");
-                } else if (player == 2) {
-                    alert("You chose 🧻 ");
-                } else if (player == 3) {
-                    alert("You chose ✂️ ");
+                let result = "";
+                if (play == 1) {
+                    result = "You chose 🥌 ";
+                } else if (play == 2) {
+                    result = "You chose 🧻 ";
+                } else if (play == 3) {
+                    result = "You chose ✂️ ";
                 } else {
-                    alert("Invalid choice");
+                    result = "Invalid choice";
                 }
             }
             // 1 = rock, 2 = paper, 3 = scissors
